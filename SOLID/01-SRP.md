@@ -26,7 +26,7 @@ class Barista:
 
 When we want to make a change in coffee making process, we update the **Barista** class. That's ok, right? Suppose we buy a new orange juice machine, change the payment device, add a new syrup etc. We have done a lot of updates in the class. As a result, the Barista class became bloated over time. We end up with a jack-of-all-trades 24 function multi utility Swiss Army knife that is trying to do everything. Hard to navigate and maintain, violates SRP.  
 
-![alt text](images/image.png)
+![alt text](images/srp1.png)
 
 This is where we need **Separation of Concerns**:
 
