@@ -40,11 +40,13 @@ The problem is `FilterCoffeeMachine` is derived from `CoffeeMachine` but it does
 **Lets fix this** now by adding an interface (interface segregation):
 
 ```Python
-    class MilkAddable:
+    from abc import ABC
+
+    class MilkAddable(ABC):
         def add_milk(self):
             return "Adding milk..."
 
-    class CoffeeMachine:
+    class CoffeeMachine(ABC):
         def brew(self):
             return "Brewing coffee..."
 
